@@ -13,7 +13,7 @@ const sketch = () => {
     context.fillStyle = 'black';
 
 
-  
+  //TEST TEST TEST
     const myHeight = height * 0.30;
     const myWidth = width * 0.30;
 

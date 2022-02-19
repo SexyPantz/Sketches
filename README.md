@@ -1,2 +1,2 @@
 # Sketches
-Some little experimets. Nothing to see here, move along
+Some little experimets. Nothing to see here, move along.

@@ -1,0 +1,4 @@
+canvas-sketch fileName_xx --open
+
+install:
+npm install canvas-sketch-util

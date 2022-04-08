@@ -29,7 +29,7 @@ const sketch = () => {
 
 
   
-    const num = 12;
+    const num = random.range(1, 359); //number of slices
     const radius = width*0.3;
 
     for (let i = 0; i < num; i++) {
@@ -43,34 +43,26 @@ const sketch = () => {
     context.save();
     context.translate(x,y);
     context.rotate(-angle);
-    context.scale(random.range(1, 3), 1);
+    context.scale(random.range(0.1, 1.5), random.range(0.2, 2)); //slice scale, fists withd then length
 
 
     context.beginPath();
-    context.rect(-w*0.5, -h*0.5, w, h);
+    context.rect(-w*0.5, random.range(0, -h*0.5), w, h);
     context.fill();
 
     context.restore();
 
-/*
     context.save();
     context.translate(cx, cy);
     context.rotate(-angle);
-    
-    context.begingPath();
-    context.arc(0, 0, radius, 0, slice);
-    context.stroke();
-    
 
+    context.lineWidth = random.range(5, 20);
+
+    context.beginPath()
+    context.arc(0, 0, radius* random.range(0.7, 1.3), slice*random.range(1, -8), slice*random.range(8, 5))
+    context.stroke()
     context.restore();
-*/
-
     }
-    //context.translate(100, 400);
-    //context.beginPath();
-    //context.arc(0, 0, 50, 0, Math.PI *2);
-    //context.fill();
-
   
 
   };
